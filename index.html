@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Lab 10</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700,800" rel="stylesheet">
+    <link rel="stylesheet" href="COMP3512Assign1.css">
+
+</head>
+
+<body>
+
+    <main class="container">
+        <div class="box a home">Select a Company
+            <p></p>
+        </div>
+        <div class="box b home">List of Companies
+            <label for="filterText">Filter:</label>
+            <input type="text" id="filterText">
+            <button id="go">Go</button>
+            <button id="clear">Clear</button>
+            <div class="scrollBox">
+                <table class="scrollTable" id="companiesTable">
+
+
+
+                </table>
+            </div>
+        </div>
+        <div class="box c home" id="AvgMinMax">
+            <p>Average</p>
+            <p>Min</p>
+            <p>Max</p>
+            <div>
+                <table>
+
+                </table>
+            </div>
+        </div>
+        <div class="box d home">Map
+            <section>
+
+            </section>
+        </div>
+        <div class="box e" id="head">
+            <header>COMP 3512 Assign1</header>
+            <div id="credits">
+                <p>Liam Eisenberg</p>
+                <p>COMP 3512</p>
+                <p>third Party Technology (google maps, charting package)</p>
+                <p>https://devhints.io/js-speech</p>
+            </div>
+        </div>
+        <div class="box f home">
+            <h3>Stock Data</h3>
+            <button id="viewCharts">View Charts</button>
+            <div class="scrollBox">
+                <table class="scrollTable" id="stockTable">
+
+
+                </table>
+            </div>
+        </div>
+        <div class="box g home">ghost</div>
+        <div class="box h chartView" id="subBox">Charts
+            <!--
+            <div class="box boxh topH">Charts</div>
+            <div class="box boxh topL"></div>
+            <div class="box boxh topR"></div>
+            <div class="box boxh bott"></div>
+            -->
+            <!-- this can't be hidden properly because 
+            setting the class to hidden is being overridden
+            by the display: grid. I can't figure out how 
+            to hide these when the view switches back to 
+            the main page. For now I've commented them out
+            to stop fucking up the main page.-->
+        </div>
+        <div class="box i chartView">Financials
+            <table>
+                <tr>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                </tr>
+                <tr>
+                    <th></th>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th></th>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th></th>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th></th>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </table>
+        </div>
+        <div class="box j chartView">Company Name + Symbol
+            <button id="close">Close</button>
+        </div>
+    </main>
+
+
+    <script src="COMP3512Assign1.js"></script>
+    <!-- AIzaSyCJIrAE8NUZHz0LqMH_JTDR45qJ2FSw7jg -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCJIrAE8NUZHz0LqMH_JTDR45qJ2FSw7jg&callback=initMap"></script>
+</body>
+
+</html>
