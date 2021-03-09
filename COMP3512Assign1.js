@@ -62,7 +62,7 @@ document.addEventListener("DOMContentLoaded", function() {
     let companiesDat;
 
     //Companies API call
-    const companiesAPI = 'http://www.randyconnolly.com/funwebdev/3rd/api/stocks/companies.php';
+    const companiesAPI = 'https://www.randyconnolly.com/funwebdev/3rd/api/stocks/companies.php';
     const stockAPI = 'https://www.randyconnolly.com/funwebdev/3rd/api/stocks/history.php?symbol=';
 
     if (localStorage.getItem("companyData") == null) {
